@@ -8,13 +8,15 @@ from django.db.models import Q, CheckConstraint
 
 class Review(models.Model):
     id = models.AutoField(primary_key=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="reviews")
-    album_name = models.CharField(max_length=255)
-    genre = models.CharField(max_length=50)
+    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="reviews", null=False)
+    album_name = models.CharField(max_length=255, blank=False)
+    genre = models.CharField(max_length=50, blank=False)
     date_created = models.DateTimeField(auto_now_add=True)
-    content = models.TextField()
+    content = models.TextField(blank=False)
+    excerpt = models.TextField(blank=True)
     score = models.PositiveSmallIntegerField(
-        validators=[MinValueValidator(1), MaxValueValidator(5)]
+        validators=[MinValueValidator(1), MaxValueValidator(5)],
+        blank=False
     )
 
     class Meta:
