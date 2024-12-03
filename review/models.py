@@ -10,6 +10,7 @@ class Review(models.Model):
     id = models.AutoField(primary_key=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="reviews", null=False)
     album_name = models.CharField(max_length=255, blank=False)
+    artist_name = models.CharField(max_length=255, blank=False)
     genre = models.CharField(max_length=50, blank=False)
     date_created = models.DateTimeField(auto_now_add=True)
     content = models.TextField(blank=False)
@@ -18,6 +19,7 @@ class Review(models.Model):
         validators=[MinValueValidator(1), MaxValueValidator(5)],
         blank=False
     )
+
 
     class Meta:
         constraints = [
