@@ -29,3 +29,8 @@ class Review(models.Model):
             )
         ]
 
+    def __str__(self):
+        return f"{self.album_name}- {self.artist_name}- review by {self.author}"
+
+                                                        
+
