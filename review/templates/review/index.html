@@ -2,14 +2,17 @@
 
 {% block content %}
 <div class="container">
-    <h1 class="text-center">Album Reviews</h1>
+    <h2 class="text-center">Album Reviews</h2>
     <div class="row">
         {% for review in review_list %}
         <div class="col-md-4 mb-4">
             <div class="card">
                 <div class="card-body">
-                    <h2 class="card-album">{{ review.album_name }}</h2>
-                    <h3 class="card-artist">{{ review.artist_name }}</h3>
+                    <a href="#" class="review-link">
+                        <h3 class="card-album">{{ review.album_name }}</h3>
+                    </a>
+
+                    <h4 class="card-artist">{{ review.artist_name }}</h4>
                     <p class="card-author">{{ review.author.username }}</p>
                     <p class="card-created">{{ review.date_created }}</p>
                 </div>

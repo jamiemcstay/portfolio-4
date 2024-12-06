@@ -1,0 +1,22 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Ensure all cards have the same height */
+.card-body {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    height: 100% !important;
+    /* Forces equal height */
+}
+
+/* Ensure each card takes up equal space */
+.col-md-4 {
+    display: flex;
+}
+
+.card {
+    width: 100%;
+}
