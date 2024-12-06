@@ -9,3 +9,4 @@ class ReviewList(generic.ListView):
     queryset = Review.objects.all()
     template_name = "review/index.html"
     paginate_by = 9
+
