@@ -1,0 +1,381 @@
+[{
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "The Miseducation of Lauryn Hill",
+            "artist_name": "Lauryn Hill",
+            "genre": "R&B / Hip-Hop",
+            "date_created": "2024-01-26 11:53:48",
+            "content": "The Miseducation of Lauryn Hill by Lauryn Hill is a remarkable album in the R&B / Hip-Hop genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, The Miseducation of Lauryn Hill has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 2
+        }
+    },
+
+    {
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "Kid A",
+            "artist_name": "Radiohead",
+            "genre": "Experimental Rock",
+            "date_created": "2005-05-26 11:53:48",
+            "content": "Kid A by Radiohead is a remarkable album in the Experimental Rock genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, Kid A has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 4
+        }
+
+    },
+
+    {
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "Back to Black",
+            "artist_name": "Amy Winehouse",
+            "genre": "Soul / R&B",
+            "date_created": "2012-10-20 11:53:48",
+            "content": "Back to Black by Amy Winehouse is a remarkable album in the Soul / R&B genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, Back to Black has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 4
+        }
+    },
+
+    {
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "To Pimp a Butterfly",
+            "artist_name": "Kendrick Lamar",
+            "genre": "Hip-Hop",
+            "date_created": "2017-01-03 11:53:48",
+            "content": "To Pimp a Butterfly by Kendrick Lamar is a remarkable album in the Hip-Hop genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, To Pimp a Butterfly has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 5
+        }
+    },
+
+    {
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "Adele 21",
+            "artist_name": "Adele",
+            "genre": "Pop / Soul",
+            "date_created": "2003-04-19 11:53:48",
+            "content": "Adele 21 by Adele is a remarkable album in the Pop / Soul genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, Adele 21 has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 3
+        }
+    },
+
+    {
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "DAMN.",
+            "artist_name": "Kendrick Lamar",
+            "genre": "Hip-Hop",
+            "date_created": "2016-01-18 11:53:48",
+            "content": "DAMN. by Kendrick Lamar is a remarkable album in the Hip-Hop genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, DAMN. has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 4
+        }
+    },
+
+    {
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "Lemonade",
+            "artist_name": "Beyonce",
+            "genre": "R&B / Pop",
+            "date_created": "2021-05-09 11:53:48",
+            "content": "Lemonade by Beyonc\u00e9 is a remarkable album in the R&B / Pop genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, Lemonade has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 2
+        }
+    },
+
+    {
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "In Rainbows",
+            "artist_name": "Radiohead",
+            "genre": "Alternative Rock",
+            "date_created": "2021-10-28 11:53:48",
+            "content": "In Rainbows by Radiohead is a remarkable album in the Alternative Rock genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, In Rainbows has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 2
+        }
+    },
+
+    {
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "AM",
+            "artist_name": "Arctic Monkeys",
+            "genre": "Indie Rock",
+            "date_created": "2007-09-19 11:53:48",
+            "content": "AM by Arctic Monkeys is a remarkable album in the Indie Rock genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, AM has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 2
+        }
+    },
+
+    {
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "Melodrama",
+            "artist_name": "Lorde",
+            "genre": "Pop",
+            "date_created": "2012-06-12 11:53:48",
+            "content": "Melodrama by Lorde is a remarkable album in the Pop genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, Melodrama has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 4
+        }
+    },
+
+    {
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "1989",
+            "artist_name": "Taylor Swift",
+            "genre": "Pop",
+            "date_created": "2012-06-12 11:53:48",
+            "content": "1989 by Taylor Swift is a remarkable album in the Pop genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, 1989 has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 1
+        }
+    },
+
+    {
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "The Marshall Mathers LP",
+            "artist_name": "Eminem",
+            "genre": "Hip-Hop",
+            "date_created": "2012-06-12 11:53:48",
+            "content": "The Marshall Mathers LP by Eminem is a remarkable album in the Hip-Hop genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, The Marshall Mathers LP has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 1
+        }
+    },
+
+    {
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "Random Access Memories",
+            "artist_name": "Daft Punk",
+            "genre": "Electronic",
+            "date_created": "2022-02-19 11:53:48",
+            "content": "Random Access Memories by Daft Punk is a remarkable album in the Electronic genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, Random Access Memories has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 1
+        }
+    },
+
+    {
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "Future Nostalgia",
+            "artist_name": "Dua Lipa",
+            "genre": "Pop / Disco",
+            "date_created": "2023-02-16 11:53:48",
+            "content": "Future Nostalgia by Dua Lipa is a remarkable album in the Pop / Disco genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, Future Nostalgia has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 2
+        }
+    },
+
+    {
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "My Beautiful Dark Twisted Fantasy",
+            "artist_name": "Kanye West",
+            "genre": "Hip-Hop",
+            "date_created": "2007-06-30 11:53:48",
+            "content": "My Beautiful Dark Twisted Fantasy by Kanye West is a remarkable album in the Hip-Hop genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, My Beautiful Dark Twisted Fantasy has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 2
+        }
+    },
+
+    {
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "Good Kid, M.A.A.D City",
+            "artist_name": "Kendrick Lamar",
+            "genre": "Hip-Hop",
+            "date_created": "2005-05-26 11:53:48",
+            "content": "Good Kid, M.A.A.D City by Kendrick Lamar is a remarkable album in the Hip-Hop genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, Good Kid, M.A.A.D City has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 2
+        }
+    },
+
+    {
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "Folklore",
+            "artist_name": "Taylor Swift",
+            "genre": "Indie Folk / Pop",
+            "date_created": "2001-07-06 11:53:48",
+            "content": "Folklore by Taylor Swift is a remarkable album in the Indie Folk / Pop genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, Folklore has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 5
+        }
+    },
+
+    {
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "When We All Fall Asleep, Where Do We Go?",
+            "artist_name": "Billie Eilish",
+            "genre": "Electropop",
+            "date_created": "2008-04-14 11:53:48",
+            "content": "When We All Fall Asleep, Where Do We Go? by Billie Eilish is a remarkable album in the Electropop genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, When We All Fall Asleep, Where Do We Go? has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 2
+        }
+    },
+
+    {
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "Channel Orange",
+            "artist_name": "Frank Ocean",
+            "genre": "R&B",
+            "date_created": "2004-09-09 11:53:48",
+            "content": "Channel Orange by Frank Ocean is a remarkable album in the R&B genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, Channel Orange has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 1
+        }
+
+    },
+
+    {
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "25",
+            "artist_name": "Adele",
+            "genre": "Pop / Soul",
+            "date_created": "2003-04-19 11:53:48",
+            "content": "25 by Adele is a remarkable album in the Pop / Soul genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, 25 has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 3
+        }
+    },
+
+    {
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "Astroworld",
+            "artist_name": "Travis Scott",
+            "genre": "Hip-Hop",
+            "date_created": "2016-01-18 11:53:48",
+            "content": "Astroworld by Travis Scott is a remarkable album in the Hip-Hop genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, Astroworld has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 3
+        }
+    },
+
+    {
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "Born to Die",
+            "artist_name": "Lana Del Rey",
+            "genre": "Pop",
+            "date_created": "2012-06-12 11:53:48",
+            "content": "Born to Die by Lana Del Rey is a remarkable album in the Pop genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, Born to Die has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 5
+        }
+    },
+
+    {
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "Blonde",
+            "artist_name": "Frank Ocean",
+            "genre": "R&B / Neo-Soul",
+            "date_created": "2021-05-09 11:53:48",
+            "content": "Blonde by Frank Ocean is a remarkable album in the R&B / Neo-Soul genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, Blonde has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 2
+        }
+    },
+
+    {
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "Ctrl",
+            "artist_name": "SZA",
+            "genre": "R&B",
+            "date_created": "2012-06-12 11:53:48",
+            "content": "Ctrl by SZA is a remarkable album in the R&B genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, Ctrl has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 3
+        }
+    },
+
+    {
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "Divide",
+            "artist_name": "Ed Sheeran",
+            "genre": "Pop",
+            "date_created": "2021-10-28 11:53:48",
+            "content": "Divide by Ed Sheeran is a remarkable album in the Pop genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, Divide has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 3
+        }
+    },
+
+    {
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "El Mal Querer",
+            "artist_name": "Rosalia",
+            "genre": "Flamenco Pop",
+            "date_created": "2007-09-19 11:53:48",
+            "content": "El Mal Querer by Rosalia is a remarkable album in the Flamenco Pop genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, El Mal Querer has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 1
+        }
+    },
+
+    {
+        "model": "review.review",
+        "fields": {
+            "author": 1,
+            "album_name": "Igor",
+            "artist_name": "Tyler, the Creator",
+            "genre": "Hip-Hop / R&B",
+            "date_created": "2012-06-12 11:53:48",
+            "content": "Igor by Tyler, the Creator is a remarkable album in the Hip-Hop / R&B genre. It has gained critical and commercial acclaim for its innovative production, heartfelt lyrics, and enduring impact. This album showcases the artist's ability to blend diverse styles while addressing themes of love, identity, and societal change. Standout tracks include some of the most memorable moments in modern music. With its groundbreaking sound, Igor has left an indelible mark on the music industry, earning its place among the finest records of the last 25 years.",
+            "excerpt": "An outstanding record that redefined modern music with its innovation and emotional depth.",
+            "score": 5
+        }
+    }
+
+]
