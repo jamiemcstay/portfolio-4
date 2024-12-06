@@ -1,59 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEJ8vH+K6j1t8mOmA4d2f3JryrMT6Iccn5P2t9eZ9+gfslO2ckCggN4yfYpXs" crossorigin="anonymous">
-</head>
-
-<body>
-    <div class="container">
-        <h1>Album Reviews</h1>
-        <div class="row">
-            {% for review in review_list %}
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-album">{{ review.album_name }}</h2>
-                        <h3 class="card-artist">{{ review.artist_name }}</h3>
-                        <p class="card-author">{{ review.author.username }}</p>
-                        <p class="card-created">{{ review.date_created }}</p>
-                    </div>
+{% block content %}
+<div class="container">
+    <h1 class="text-center">Album Reviews</h1>
+    <div class="row">
+        {% for review in review_list %}
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-album">{{ review.album_name }}</h2>
+                    <h3 class="card-artist">{{ review.artist_name }}</h3>
+                    <p class="card-author">{{ review.author.username }}</p>
+                    <p class="card-created">{{ review.date_created }}</p>
                 </div>
             </div>
+        </div>
 
-            {% if forloop.counter|divisibleby:3 and not forloop.last %}
-        </div>
-        <div class="row">
-            {% endif %}
-            {% endfor %}
-        </div>
-        {% if is_paginated %}
-        <nav aria-label="Page navigation">
-            <ul class="pagination justify-content-center">
-                {% if page_obj.has_next %}
-                <li><a href="?page={{ page_obj.next_page_number }}">Next &araquo;</a></li>
-                {% endif %}
-            </ul>
-        </nav>
-        {% endif %}
+        {% if forloop.counter|divisibleby:3 and not forloop.last %}
     </div>
+    <div class="row">
+        {% endif %}
+        {% endfor %}
+    </div>
+    {% if is_paginated %}
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            {% if page_obj.has_next %}
+            <li><a href="?page={{ page_obj.next_page_number }}">Next &araquo;</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+    {% endif %}
+</div>
 
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz4fnFO9gybR8kDxntR0c3kz3bQk5b8B2e9yNJE4v6l5Zf2eNV2Vn8+7mwF" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-        integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqFjcJ3sWwwU7c4g5rG7HgYYBBf1bExANr8lWvvXyrxXG4" crossorigin="anonymous">
-    </script>
-
-</body>
-
-</html>
+{% endblock %}
