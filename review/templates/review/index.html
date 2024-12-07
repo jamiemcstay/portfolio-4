@@ -8,7 +8,7 @@
         <div class="col-md-4 mb-4">
             <div class="card">
                 <div class="card-body">
-                    <a href="#" class="review-link">
+                    <a href="{% url 'review_detail' review.slug %}" class="review-link">
                         <h3 class="card-album">{{ review.album_name }}</h3>
                     </a>
 
