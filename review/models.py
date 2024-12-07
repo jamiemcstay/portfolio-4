@@ -15,10 +15,18 @@ class Review(models.Model):
     date_created = models.DateTimeField(auto_now_add=True)
     content = models.TextField(blank=False)
     excerpt = models.TextField(blank=True)
+    slug = models.SlugField(unique=True, blank=True)
     score = models.PositiveSmallIntegerField(
         validators=[MinValueValidator(1), MaxValueValidator(5)],
         blank=False
     )
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(f"{self.artist_name} {self.album_name}")
+            
+        super().save(*args, **kwargs)
+    
 
 
     class Meta:
