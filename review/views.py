@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic
-# from django.contrib import messages
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import Review
 from .forms import ReviewForm
@@ -50,7 +50,8 @@ def my_reviews(request):
             new_review.author = request.user
             new_review.excerpt = new_review.content[:100]
             new_review.save()
-            return redirect("my_reviews")
+            messages.success(request, 'Review successfully added')
+            return redirect("review_detail", slug=new_review.slug)
     else:
         form = ReviewForm()
     return render(request, 'review/my_reviews.html', {'reviews': reviews, 'form': form})
