@@ -72,3 +72,13 @@ def review_edit(request, slug):
         form = ReviewForm(instance=review)
     return render(request, 'review/review_edit.html', {'form': form, 'review': review})
 
+def review_delete(request, slug):
+    review = get_object_or_404(Review, slug=slug)
+
+    if request.method == 'POST':
+        review.delete()
+        messages.success(request, "Review successfully deleted")
+        return redirect('my_reviews')
+
+    return render(request, 'review/review_confirm_delete.html', {'review': review})
+

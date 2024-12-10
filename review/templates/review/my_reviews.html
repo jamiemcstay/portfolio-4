@@ -15,11 +15,13 @@
                     <a href="{% url 'review_detail' review.slug %}" class="review-link">
                         <h3 class="card-album">{{ review.album_name }}</h3>
                     </a>
-
                     <h4 class="card-artist">{{ review.artist_name }}</h4>
                     <p class="card-author">{{ review.author.username }}</p>
                     <p class="card-created">{{ review.date_created }}</p>
-                    <a href="{% url 'review_edit' slug=review.slug %}" class="btn btn-primary mt-2">Edit Review</a>
+                    <div class="d-flex justify-content-evenly">
+                        <a href="{% url 'review_edit' slug=review.slug %}" class="btn btn-primary">Edit</a>
+                        <a href="{% url 'review_delete' review.slug %}" class="btn btn-danger">Delete</a>
+                    </div>
                 </div>
             </div>
         </div>
