@@ -1,6 +1,8 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic
+from django.contrib.auth.decorators import login_required
 from .models import Review
+from .forms import ReviewForm
 
 
 # Create your views here.
@@ -33,6 +35,22 @@ def review_detail(request, slug):
         {"review": review},
     )
 
-    
-    
+
+@login_required
+def my_reviews(request):
+    #Fetch only logged in users reviews
+    reviews = Review.objects.filter(author=request.user).order_by('-date_created')
+
+    # Handle form submission
+    if request.method == "POST":
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+            new_review = form.save(commit=False)
+            new_review.author = request.user
+            new_review.excerpt = new_review.content[:100]
+            new_review.save()
+            return redirect("my_reviews")
+    else:
+        form = ReviewForm()
+    return render(request, 'my_reviews.html', {'reviews': reviews, 'form': form})
 
