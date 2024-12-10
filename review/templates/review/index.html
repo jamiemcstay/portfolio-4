@@ -1,11 +1,19 @@
 {% extends "base.html" %}
-
 {% block content %}
+{% load static %}
+
 <div class="container">
     <h2 class="text-center">Album Reviews</h2>
     <div class="row">
         {% for review in review_list %}
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4 d-flex flex-column">
+            <div class="image-wrapper">
+                {% if "default" in review.image.url %}
+                <img class="card-img-top" src="{% static 'images/default.jpg' %}" alt="Album Cover">
+                {% else %}
+                <img class="card-img-top" src="{{ review.image.url }}" alt="Album Cover">
+                {% endif %}
+            </div>
             <div class="card">
                 <div class="card-body">
                     <a href="{% url 'review_detail' review.slug %}" class="review-link">

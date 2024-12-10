@@ -72,6 +72,7 @@ def review_edit(request, slug):
         form = ReviewForm(instance=review)
     return render(request, 'review/review_edit.html', {'form': form, 'review': review})
 
+@login_required
 def review_delete(request, slug):
     review = get_object_or_404(Review, slug=slug)
 

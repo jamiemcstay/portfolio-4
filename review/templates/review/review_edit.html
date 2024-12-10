@@ -1,17 +1,25 @@
 {% extends "base.html" %}
-
 {% block content %}
+{% load static %}
 
 <div class="container">
-    <h1>Edit Review</h1>
 
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
+    <div class="row">
+        <div class="col-md-8 offset-2 d-flex justify-content-center">
+            <div>
+                <h1>Edit Review</h1>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
 
-        <button type="submit" class="btn btn-primary">Update Review</button>
-    </form>
-    <a href="{% url 'review_detail' slug=review.slug %}" class="btn btn-primary">Back to review</a>
+                    <button type="submit" class="btn btn-primary">Update Review</button>
+                    <a href="{% url 'review_detail' slug=review.slug %}" class="btn btn-primary">Back to review</a>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
 </div>
 
 {% endblock %}

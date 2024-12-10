@@ -1,10 +1,9 @@
 {% extends "base.html" %}
-
 {% block content %}
 {% load static %}
 
 <div class="container">
-    <h1>My reviews</h1>
+    <h1 class="text-center">My reviews</h1>
 
     {% if reviews %}
     <div class="row">
@@ -18,7 +17,7 @@
                     <h4 class="card-artist">{{ review.artist_name }}</h4>
                     <p class="card-author">{{ review.author.username }}</p>
                     <p class="card-created">{{ review.date_created }}</p>
-                    <div class="d-flex justify-content-evenly">
+                    <div class="edit-delete-btn-wrap d-flex justify-content-evenly">
                         <a href="{% url 'review_edit' slug=review.slug %}" class="btn btn-primary">Edit</a>
                         <a href="{% url 'review_delete' review.slug %}" class="btn btn-danger">Delete</a>
                     </div>

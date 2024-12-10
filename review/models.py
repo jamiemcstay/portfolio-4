@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
 from django.utils.text import slugify
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.db.models import Q, CheckConstraint
@@ -9,6 +10,7 @@ from django.db.models import Q, CheckConstraint
 
 class Review(models.Model):
     id = models.AutoField(primary_key=True)
+    image = CloudinaryField('image', default='default')
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="reviews", null=False)
     album_name = models.CharField(max_length=255, blank=False)
     artist_name = models.CharField(max_length=255, blank=False)
