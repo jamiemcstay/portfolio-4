@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic
+# from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import Review
 from .forms import ReviewForm
@@ -52,5 +53,5 @@ def my_reviews(request):
             return redirect("my_reviews")
     else:
         form = ReviewForm()
-    return render(request, 'my_reviews.html', {'reviews': reviews, 'form': form})
+    return render(request, 'review/my_reviews.html', {'reviews': reviews, 'form': form})
 
