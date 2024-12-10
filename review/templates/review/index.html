@@ -7,11 +7,11 @@
     <div class="row">
         {% for review in review_list %}
         <div class="col-md-4 mb-4 d-flex flex-column">
-            <div class="image-wrapper">
+            <div class="image-wrapper d-none d-md-block">
                 {% if "default" in review.image.url %}
-                <img class="card-img-top" src="{% static 'images/default.jpg' %}" alt="Album Cover">
+                <img class="card-img-top scale" src="{% static 'images/default.jpg' %}" alt="Album Cover">
                 {% else %}
-                <img class="card-img-top" src="{{ review.image.url }}" alt="Album Cover">
+                <img class="card-img-top scale" src="{{ review.image.url }}" alt="Album Cover">
                 {% endif %}
             </div>
             <div class="card">
