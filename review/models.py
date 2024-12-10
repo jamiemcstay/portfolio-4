@@ -27,8 +27,6 @@ class Review(models.Model):
             self.slug = slugify(f"{self.artist_name} {self.album_name}")
 
         super().save(*args, **kwargs)
-    
-
 
     class Meta:
         constraints = [
