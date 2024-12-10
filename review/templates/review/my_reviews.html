@@ -19,6 +19,7 @@
                     <h4 class="card-artist">{{ review.artist_name }}</h4>
                     <p class="card-author">{{ review.author.username }}</p>
                     <p class="card-created">{{ review.date_created }}</p>
+                    <a href="{% url 'review_edit' slug=review.slug %}" class="btn btn-primary mt-2">Edit Review</a>
                 </div>
             </div>
         </div>

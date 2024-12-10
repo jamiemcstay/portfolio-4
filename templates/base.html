@@ -58,9 +58,9 @@
         </nav>
     </header>
     {% if messages %}
-    <div class="alert alert-success" role="alert">
+    <div class="alert alert-success col-md-8 offset-md-2" role="alert">
         {% for message in messages %}
-        {{ message }}
+        {{ message | safe }}
         {% endfor %}
     </div>
     {% endif %}

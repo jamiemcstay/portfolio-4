@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.http import HttpResponseRedirect
 from .models import Review
 from .forms import ReviewForm
 
@@ -55,4 +56,19 @@ def my_reviews(request):
     else:
         form = ReviewForm()
     return render(request, 'review/my_reviews.html', {'reviews': reviews, 'form': form})
+
+
+@login_required
+def review_edit(request, slug):
+    review = get_object_or_404(Review, slug=slug)
+
+    if request.method == "POST":
+        form = ReviewForm(request.POST, instance=review)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Review successfully updated")
+            return redirect('review_detail', slug=review.slug)
+    else:
+        form = ReviewForm(instance=review)
+    return render(request, 'review/review_edit.html', {'form': form, 'review': review})
 
