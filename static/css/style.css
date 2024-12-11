@@ -20,3 +20,15 @@
 .card {
     width: 100%;
 }
+
+.add-review-icon-wrapper {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(150 150 150);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+}

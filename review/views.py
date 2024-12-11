@@ -42,8 +42,12 @@ def review_detail(request, slug):
 def my_reviews(request):
     #Fetch only logged in users reviews
     reviews = Review.objects.filter(author=request.user).order_by('-date_created')
+    return render(request, 'review/my_reviews.html', {'reviews': reviews})
 
-    # Handle form submission
+
+@login_required
+def add_review(request):
+        # Handle form submission
     if request.method == "POST":
         form = ReviewForm(request.POST)
         if form.is_valid():
@@ -55,7 +59,7 @@ def my_reviews(request):
             return redirect("review_detail", slug=new_review.slug)
     else:
         form = ReviewForm()
-    return render(request, 'review/my_reviews.html', {'reviews': reviews, 'form': form})
+    return render(request, 'review/add_review.html', {'form': form})
 
 
 @login_required
