@@ -3,14 +3,15 @@
 {% load static %}
 
 <div class="container">
-    <div class="my-reviews-heading-wrapper d-flex align-items-center">
-        <a href="{% url 'add_review' %}">
-            <h2 class="text-center d-flex align-items-center ">My reviews</h2>
-            <div class="add-review-icon-wrapper ml-5">
-                <h2>+</h2>
-            </div>
-        </a>
 
+    <div class="my-reviews-heading-wrapper d-flex align-items-center">
+        <h2 class="text-center d-flex align-items-center">My reviews
+            <a href="{% url 'add_review' %}" class="add-review-icon-a">
+                <div class="add-review-icon-wrapper text-center">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </a>
+        </h2>
     </div>
 
     {% if reviews %}

@@ -9,7 +9,8 @@ class ReviewForm(forms.ModelForm):
             'artist_name', 
             'genre', 
             'content', 
-            'score'
+            'score',
+            'image',
         ]
         widgets = {
             'content': forms.Textarea(attrs={'rows': 5}),

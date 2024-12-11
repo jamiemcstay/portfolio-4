@@ -49,7 +49,7 @@ def my_reviews(request):
 def add_review(request):
         # Handle form submission
     if request.method == "POST":
-        form = ReviewForm(request.POST)
+        form = ReviewForm(request.POST, request.FILES)
         if form.is_valid():
             new_review = form.save(commit=False)
             new_review.author = request.user
