@@ -8,7 +8,15 @@
     {% if reviews %}
     <div class="row">
         {% for review in reviews %}
-        <div class="col-md-4 mb-4">
+        <div class="col-md-4 mb-4 d-flex flex-column">
+            <div class="image-wrapper d-none d-md-block">
+                {% if "default" in review.image.url %}
+                <img src="{% static 'images/default.png' %}" class="card-img-top scale" alt="Album Cover">
+                {% else %}
+                <img class="card-img-top scale" src="{{ review.image.url }}" alt="Album Cover">
+                {% endif %}
+            </div>
+
             <div class="card">
                 <div class="card-body">
                     <a href="{% url 'review_detail' review.slug %}" class="review-link">

@@ -9,7 +9,7 @@
         <div class="col-md-4 mb-4 d-flex flex-column">
             <div class="image-wrapper d-none d-md-block">
                 {% if "default" in review.image.url %}
-                <img class="card-img-top scale" src="{% static 'images/default.jpg' %}" alt="Album Cover">
+                <img src="{% static 'images/default.png' %}" class="card-img-top scale" alt="Album Cover">
                 {% else %}
                 <img class="card-img-top scale" src="{{ review.image.url }}" alt="Album Cover">
                 {% endif %}
