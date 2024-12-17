@@ -5,28 +5,25 @@
 <div class="container">
 
     <div class="row justify-content-center">
-        <div class="col-lg-8 d-flex flex-column justify-content-center text-align-left">
-            <p class="mb-1">REVIEWS</p>
-
-            <h2 class="pb-3 review-excerpt"><strong>{{ review.excerpt }}</strong></h2>
-            <div class="d-flex justify-between">
+        <div class="col-lg-8 d-flex justify-content-between">
+            <div class="review-detail-left">
+                <p class="mb-1">Reviews</p>
                 <h2><strong>{{ review.album_name }}</strong></h2>
-                <h3>{{ review.artist_name }}</h3>
+                <h3 class="text-italic">{{ review.artist_name }}</h3>
                 <h2>{{ review.score }}/5</h2>
             </div>
-
-
+            <div class="review-detail-right">
+                {% if "default" in review.image.url %}
+                <img src="{% static 'images/default.png' %}" class="scale card-img-detail" alt="Placeholder Image">
+                {% else %}
+                <img class="card-img-top scale" src="{{ review.image.url }}" alt="Album Cover">
+                {% endif %}
+            </div>
         </div>
-        <div class="col-lg-8">
-            {% if "default" in review.image.url %}
-            <img src="{% static 'images/default.png' %}" class="scale card-img-detail" alt="Placeholder Image">
-            {% else %}
-            <img class="card-img-top scale" src="{{ review.image.url }}" alt="Album Cover">
-            {% endif %}
-        </div>
+
     </div>
     <div class="row d-flex justify-content-center">
-        <div class="col-md-10">
+        <div class="col-lg-8">
             <p>{{ review.author.username }}</p>
             <div class="content">
                 <p>{{ review.content | safe }}</p>
