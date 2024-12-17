@@ -34,9 +34,9 @@
                     <h4 class="card-artist">{{ review.artist_name }}</h4>
                     <p class="card-author">{{ review.author.username }}</p>
                     <p class="card-created">{{ review.date_created }}</p>
-                    <div class="edit-delete-btn-wrap d-flex justify-content-evenly">
-                        <a href="{% url 'review_edit' slug=review.slug %}" class="btn btn-primary">Edit</a>
-                        <a href="{% url 'review_delete' review.slug %}" class="btn btn-danger">Delete</a>
+                    <div class="edit-delete-btn-wrap">
+                        <a href="{% url 'review_edit' slug=review.slug %}" class="btn btn-primary edit-btn">Edit</a>
+                        <a href="{% url 'review_delete' review.slug %}" class="btn btn-danger delete-btn">Delete</a>
                     </div>
                 </div>
             </div>

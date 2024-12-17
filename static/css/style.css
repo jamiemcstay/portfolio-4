@@ -35,9 +35,6 @@ main {
 
 }
 
-.col-md-4 {
-    display: flex;
-}
 
 .card {
     width: 100%;
@@ -79,6 +76,28 @@ main {
     color: rgb(24, 24, 24);
     font-size: calc(0.5rem + .9vw);
 
+}
+
+.edit-delete-btn-wrap {
+    width: auto;
+    display: flex;
+    gap: 1%;
+}
+
+.edit-delete-btn-wrap>a {
+    flex-basis: 50%;
+    border-radius: 0;
+}
+
+.edit-btn,
+.delete-btn {
+    border: solid 2px black;
+    color: black;
+    background-color: lightgrey;
+}
+
+.delete-btn {
+    background-color: white;
 }
 
 a {
