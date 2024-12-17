@@ -42,8 +42,17 @@ def review_detail(request, slug):
 @login_required
 def my_reviews(request):
     #Fetch only logged in users reviews
-    reviews = Review.objects.filter(author=request.user).order_by('-date_created')
-    return render(request, 'review/my_reviews.html', {'reviews': reviews})
+    review_list = Review.objects.filter(author=request.user).order_by('-date_created')
+
+    #pagination: 6 reviews per page
+    paginator = Paginator(review_list, 6)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+
+    return render(request, 'review/my_reviews.html', {
+        'page_obj': page_obj,
+        'is_paginated': page_obj.has_other_pages()
+    })
 
 
 @login_required
