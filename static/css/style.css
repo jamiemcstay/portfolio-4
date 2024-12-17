@@ -38,6 +38,29 @@ main {
 
 .card {
     width: 100%;
+    border: none;
+    /* border-left: solid 2px rgb(80, 80, 80); */
+    border-radius: 0;
+}
+
+
+.card-album {
+    margin-bottom: 3px;
+}
+
+.card-artist {
+    font-weight: 400;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+.card-author {
+    margin-bottom: 0;
+}
+
+.card-author,
+.card-created {
+    font-weight: 300;
 }
 
 .pagination {
