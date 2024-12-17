@@ -11,7 +11,6 @@ body {
 
 main {
     flex: 1;
-
 }
 
 .row {
@@ -39,7 +38,6 @@ main {
 .card {
     width: 100%;
     border: none;
-    /* border-left: solid 2px rgb(80, 80, 80); */
     border-radius: 0;
 }
 
@@ -61,6 +59,10 @@ main {
 .card-author,
 .card-created {
     font-weight: 300;
+}
+
+.review-excerpt {
+    font-style: italic;
 }
 
 .pagination {

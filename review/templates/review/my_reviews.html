@@ -18,7 +18,7 @@
     <div class="row">
         {% for review in page_obj %}
         <div class="col-md-4 mb-4 d-flex flex-column">
-            <div class="image-wrapper d-none d-md-block">
+            <div class="image-wrapper d-block">
                 {% if "default" in review.image.url %}
                 <img src="{% static 'images/default.png' %}" class="card-img-top scale" alt="Album Cover">
                 {% else %}
