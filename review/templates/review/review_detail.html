@@ -5,12 +5,15 @@
 <div class="container">
 
     <div class="row justify-content-center">
-        <div class="col-lg-8 d-flex justify-content-between">
-            <div class="review-detail-left">
-                <p class="mb-1">Reviews</p>
-                <h2><strong>{{ review.album_name }}</strong></h2>
-                <h3 class="text-italic">{{ review.artist_name }}</h3>
-                <h2>{{ review.score }}/5</h2>
+        <div class="rev-detail-top col-lg-8 d-flex justify-content-between">
+            <div class="review-detail-left d-flex justify-content-center align-items-center">
+                <div>
+                    <p class="mb-1">Reviews</p>
+                    <h2><strong>{{ review.album_name }}</strong></h2>
+                    <h3 class="font-italic">{{ review.artist_name }}</h3>
+                    <h2>{{ review.score }}/5</h2>
+                </div>
+
             </div>
             <div class="review-detail-right">
                 {% if "default" in review.image.url %}
