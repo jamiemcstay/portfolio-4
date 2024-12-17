@@ -7,10 +7,10 @@
 {% block content %}
 {% load static %}
 
-<div class="container">
+<div class="container center-wrapper">
   <div class="row">
-    <div class="col-lg-4 mx-auto">
-      <h1>{% trans "Sign Out" %}</h1>
+    <div class="col mx-auto">
+      <h2>{% trans "Sign Out" %}</h2>
 
       <p>{% trans 'Are you sure you want to sign out?' %}</p>
 
@@ -19,11 +19,11 @@
         {% if redirect_field_value %}
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
         {% endif %}
-
-        <button type="submit">{% trans 'Sign Out' %}</button>
-        <a href="{% url 'home' %}" class="btn button">{% trans "Cancel" %}</a>
+        <div class="button-wrapper">
+          <button type="submit">{% trans 'Sign Out' %}</button>
+          <a href="{% url 'home' %}" class="btn button cancel-button">{% trans "Cancel" %}</a>
+        </div>
       </form>
-
     </div>
   </div>
 </div>
