@@ -43,6 +43,22 @@ main {
     width: 100%;
 }
 
+.pagination {
+    width: 200px;
+    margin: 0 auto;
+    gap: 1%;
+}
+
+.pagination li {
+    flex-basis: 50%;
+}
+
+.pagination>li>a {
+    border: solid 2px black;
+    border-radius: 0;
+    width: 100%;
+}
+
 .add-review-icon-wrapper {
     width: 35px;
     height: 35px;
