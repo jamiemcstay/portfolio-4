@@ -5,7 +5,7 @@
 <div class="container">
 
     <div class="my-reviews-heading-wrapper d-flex align-items-center">
-        <h2 class="text-center d-flex align-items-center">My reviews
+        <h2 class="text-center d-flex align-items-center mb-4">My reviews
             <a href="{% url 'add_review' %}" class="add-review-icon-a">
                 <div class="add-review-icon-wrapper text-center">
                     <i class="fa-solid fa-plus"></i>
@@ -63,15 +63,6 @@
         </ul>
     </nav>
     {% endif %}
-
-    <hr>
-
-    <h2>Add a New Review</h2>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Add Review</button>
-    </form>
 </div>
 
 {% endblock %}

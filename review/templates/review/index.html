@@ -3,7 +3,7 @@
 {% load static %}
 
 <div class="container">
-    <h2 class="text-center">Album Reviews</h2>
+    <h2 class="mb-4">Album Reviews</h2>
     <div class="row">
         {% for review in review_list %}
         <div class="col-md-4 mb-4 d-flex flex-column">
@@ -40,7 +40,7 @@
             <li><a href="?page={{ page_obj.previous_page_number }}">Previous</a></li>
             {% endif %}
             {% if page_obj.has_next %}
-            <li><a href="?page={{ page_obj.next_page_number }}">Next</a></li>
+            <li><a href="?page={{ page_obj.next_page_number }}" class="btn">Next</a></li>
             {% endif %}
         </ul>
     </nav>

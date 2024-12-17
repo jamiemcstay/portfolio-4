@@ -3,6 +3,7 @@ from django.views import generic
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
+from django.core.paginator import Paginator
 from .models import Review
 from .forms import ReviewForm
 
@@ -12,7 +13,7 @@ from .forms import ReviewForm
 class ReviewList(generic.ListView):
     queryset = Review.objects.all()
     template_name = "review/index.html"
-    paginate_by = 9
+    paginate_by = 6
 
 
 def review_detail(request, slug):
@@ -67,7 +68,11 @@ def review_edit(request, slug):
     review = get_object_or_404(Review, slug=slug)
 
     if request.method == "POST":
-        form = ReviewForm(request.POST, instance=review)
+        form = ReviewForm(request.POST, request.FILES, instance=review)
+        if review.author != request.user:
+            messages.error(request, "You can only edit you're own album review")
+            return redirect('review_detail', slug=review.slug)
+
         if form.is_valid():
             form.save()
             messages.success(request, "Review successfully updated")
@@ -81,6 +86,9 @@ def review_delete(request, slug):
     review = get_object_or_404(Review, slug=slug)
 
     if request.method == 'POST':
+        if review.author != request.user:
+            messages.error(request, "You can only delete you're own album review")
+            return redirect('review_detail', slug=review.slug)
         review.delete()
         messages.success(request, "Review successfully deleted")
         return redirect('my_reviews')
