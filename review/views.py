@@ -35,7 +35,10 @@ def review_detail(request, slug):
     return render(
         request,
         "review/review_detail.html",
-        {"review": review},
+        {
+            "review": review,
+            "range": range(5),
+            },
     )
 
 

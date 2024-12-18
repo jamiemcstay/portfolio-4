@@ -34,6 +34,34 @@ main {
 
 }
 
+.review-sm-title {
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: #575757;
+}
+
+.review-genre-wrapper {
+    height: 50px;
+    width: fit-content;
+    border-radius: 40px;
+    background-color: rgb(206, 206, 206);
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.review-genre {
+    font-size: 0.8rem;
+}
+
+.review-artist {
+    font-style: italic;
+}
+
+.star-rating>i {
+    color: black;
+    font-size: 2rem;
+}
 
 .card {
     width: 100%;
@@ -148,4 +176,15 @@ a {
 
 .button-wrapper>button:hover {
     border: solid 2px transparent;
+}
+
+@media screen and (min-width: 1200px) {
+
+    .review-album {
+        font-size: 2.75rem !important;
+    }
+
+    .review-artist {
+        font-size: 2rem !important;
+    }
 }

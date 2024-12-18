@@ -8,10 +8,22 @@
         <div class="rev-detail-top col-lg-8 d-flex justify-content-between">
             <div class="review-detail-left d-flex justify-content-center align-items-center">
                 <div>
-                    <p class="mb-1">Reviews</p>
-                    <h2><strong>{{ review.album_name }}</strong></h2>
-                    <h3 class="font-italic">{{ review.artist_name }}</h3>
-                    <h2>{{ review.score }}/5</h2>
+                    <p class="mb-1 review-sm-title">Reviews</p>
+                    <h2 class="review-album"><strong>{{ review.album_name }}</strong></h2>
+                    <h3 class="review-artist mb-3">{{ review.artist_name }}</h3>
+                    <!-- <div class="review-genre-wrapper">
+                        <p class="review-genre mb-0">{{ review.genre }}</p>
+                    </div> -->
+                    <div class="star-rating">
+                        {% for i in range %}
+                        {% if i < review.score %}
+                        <i class="fas fa-star"></i>
+                        {% else %}
+                        <i class="far fa-star"></i>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+
                 </div>
 
             </div>
@@ -25,12 +37,17 @@
         </div>
 
     </div>
+    <hr>
     <div class="row d-flex justify-content-center">
-        <div class="col-lg-8">
-            <p>{{ review.author.username }}</p>
+        <div class="col-lg-8 d-flex justify-content-center align-items-center">
+            <p>Review by {{ review.author.username }}</p>
             <div class="content">
-                <p>{{ review.content | safe }}</p>
             </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <p>{{ review.content | safe }}</p>
         </div>
     </div>
 
