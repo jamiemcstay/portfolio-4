@@ -1,131 +1,123 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **TuneCritic Blog**
+##  **App Overview**
+As a big music fan, I wanted to create a blog that showed reviews of some pivotal albums of the last 20 years.
 
-Welcome Jamie McStay,
+The TuneCritic blog is designed to allow any user to view reviews that are written by users, and anyone to sign up, create an account, and write their own reviews for albums that can be viewed by any visitors on the site. The app enables users to edit, delete the reviews they have posted. It provides a community-driven space for music enthusiasts to share their opionions and discover new perspectives on albums from the past two decades. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<hr>
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+![I am Responsive Screenshot]()
 
-## Gitpod Reminders
+Click here for Heroku deployment of app
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+<hr>
 
-`python3 -m http.server`
+## Table of Contents:
 
-A blue button should appear to click: _Make Public_,
+1. [**App Overview**](#app-overview)
+1. [**Planning**](#planning)
+    * [**Strategy**](#strategy)
+      * [**Application Goals**](#app-goals)
+      * [**Target Audiences**](#target-audiences)
+      * [**User Stories**](#user-stories)
+    * [**Wireframes**](#wireframes)
+    * [**Entity Relationship Diagram**](#erd)
+    * [**Color Scheme**](#color-scheme)
+    * [**Typography**](#typography)
+1. [**Agile Development**](#agile-development)
+1. [**Features**](#features)
+    * [**Admin**](#admin)
+    * [**Header**](#header)
+    * [**Home Page**](#homepage)
+    * [**My Reviews**](#my-reviews)
+    * [**Review Detail**](#review-detail)
+    * [**Add Review**](#add-review)
+    * [**Edit Review**](#edit-review)
+    * [**Delete Review**](#delete-review)
+    * [**Accounts**](#accounts)
+      * [***Login***](#login)
+      * [***Logout***](#logout)
+      * [***Signup***](#signup)
+    * [**Messages**](#messages)
+    * [**Defensive Design**](#defensive-design)
 
-Another blue button should appear to click: _Open Browser_.
+1. [**Future Features**](#future-features)
+1. [**Testing**](#testing)
+1. [**Deployment**](#deployment)
+1. [**Technology**](#technology)
+1. [**Media**](#media)
+1. [**Credits**](#credits)
+1. [**Acknowledgments**](#acknowledgements)
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+## **Planning**
 
-A blue button should appear to click: _Make Public_,
+### **Strategy**
 
-Another blue button should appear to click: _Open Browser_.
+#### **Application Goals**
+- **Create an intuitive platform** where users can share and discover reviews for albums.
+- **Provide secure user accounts** enabling individuals to add, edit, and manage their own reviews.
+- **Facilitate community interaction** by allowing user to express their thoughts on albums, creating a space for music enthusiasts to connect.
+- **Ensure responsive design**, so the blog can be enjoyed across devices of different screen sizes.
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+#### **Target Audiences**
 
-To log into the Heroku toolbelt CLI:
+- **Music Enthusiasts** who enjoy discovering new albums and reading reviews from others.
+- **Bloggers and critics** looking to share their reviews and opinions on popular albums
+- **Casual Listeners** who want to learn more about albums before deciding to listen to them.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+#### **User Stories**
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+The beginning phase of the project involved adopting the perspective of the future user. I tried to step into the shoes of a future user and understand what basic features and functionality I would expec, which lead me to developing 8 essential user stories. Each user was created using Githubs issues features, and includes acceptance criteria and that are represent the tasks I was to take on as the developer in this project. When I felt the acceptance criteria of each user story had been met, I moved the user story from 'In Progress' to 'Complete' on the kanban board within the Github project that was created. 
 
-### Connecting your Mongo database
+> User Stories
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+1. [User Story: Admin Login](https://github.com/users/jamiemcstay/projects/4/views/1?pane=issue&itemId=89391178&issue=jamiemcstay%7Cportfolio-4%7C4)
+2. [User Story: Displaying Reviews](https://github.com/users/jamiemcstay/projects/4/views/1?pane=issue&itemId=89392864&issue=jamiemcstay%7Cportfolio-4%7C8)
+3. [User Story: Review Management](https://github.com/users/jamiemcstay/projects/4/views/1?pane=issue&itemId=89391403&issue=jamiemcstay%7Cportfolio-4%7C5)
+4. [User Story: User Registration](https://github.com/users/jamiemcstay/projects/4/views/1?pane=issue&itemId=89389801&issue=jamiemcstay%7Cportfolio-4%7C1)
+5. [User Story: User Login](https://github.com/users/jamiemcstay/projects/4/views/1?pane=issue&itemId=89390446&issue=jamiemcstay%7Cportfolio-4%7C2)
+6. [User Story: User Logout](https://github.com/users/jamiemcstay/projects/4/views/1?pane=issue&itemId=89390869&issue=jamiemcstay%7Cportfolio-4%7C3)
+7. [User Story: Edit Review](https://github.com/users/jamiemcstay/projects/4/views/1?pane=issue&itemId=89392214&issue=jamiemcstay%7Cportfolio-4%7C6)
+8. [User Story: Delete Review](https://github.com/users/jamiemcstay/projects/4/views/1?pane=issue&itemId=89392529&issue=jamiemcstay%7Cportfolio-4%7C7)
 
-------
 
-## Release History
+### **Wireframes**
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+I used Figma to create wiremframes for this project. I wanted to create a very basic design that would meet the criteria as I had outlined in my user stories.
 
-**June 18, 2024,** Add Mongo back into template
+* [Homepage](docs/wireframes/home.png)
+* [My Reviews](docs/wireframes/my-reviews.png)
+* [Review Detail](docs/wireframes/review-detail.png)
+* [Add Review](docs/wireframes/add-review.png)
+* [Edit Review](docs/wireframes/edit-review.png)
+* [Delete Review](docs/wireframes/delete-review.png)
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+I wanted to keep my design simple at this early stage of design, however I liked the simple color scheme of black and white, and choose to keep this as the project progressed into the later stages.
 
-**May 28 2024:** Fix Mongo and Links installs
+### **Entity Relationship Diagram**
 
-**April 26 2024:** Update node version to 16
+The app consisted of one custom model, the Review model, and the user model from Django was imported. You can see a visual representation of the relationship between these to models [here](docs/erd/erd.png).
 
-**September 20 2023:** Update Python version to 3.9.17.
+### **Color Scheme**
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+I had done some research on music blogs and review sites, the most popular of which being pitchfork. I decided to keep with a very similar color scheme.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- **Header and Footer**: #212529
+- **Main section**: #fff
+- **Typography**: #000000 and #fff
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### **Typography**
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+For this project I kept it simple and left the default bs-font-sans-serif variable that points to the list of fonts as are available depending on a users system (inlcuding Roboto, Segoe UI, Helvetica Neue, Noto Sans)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
 
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
