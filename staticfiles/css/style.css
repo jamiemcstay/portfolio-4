@@ -1,23 +1,111 @@
+html,
+body {
+    height: 100%;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
 }
 
-/* Ensure all cards have the same height */
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
 .card-body {
     display: flex !important;
     flex-direction: column !important;
     justify-content: space-between !important;
     height: 100% !important;
-    /* Forces equal height */
+
 }
 
-/* Ensure each card takes up equal space */
-.col-md-4 {
+.review-sm-title {
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: #575757;
+}
+
+.review-genre-wrapper {
+    height: 50px;
+    width: fit-content;
+    border-radius: 40px;
+    background-color: rgb(206, 206, 206);
     display: flex;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.review-genre {
+    font-size: 0.8rem;
+}
+
+.review-artist {
+    font-style: italic;
+}
+
+.star-rating>i {
+    color: black;
+    font-size: 2rem;
 }
 
 .card {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+}
+
+
+.card-album {
+    margin-bottom: 3px;
+}
+
+.card-artist {
+    font-weight: 400;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+.card-author {
+    margin-bottom: 0;
+}
+
+.card-author,
+.card-created {
+    font-weight: 300;
+}
+
+.review-excerpt {
+    font-style: italic;
+}
+
+.pagination {
+    width: 200px;
+    margin: 0 auto;
+    gap: 1%;
+}
+
+.pagination li {
+    flex-basis: 50%;
+}
+
+.pagination>li>a {
+    border: solid 2px black;
+    border-radius: 0;
     width: 100%;
 }
 
@@ -43,6 +131,28 @@
 
 }
 
+.edit-delete-btn-wrap {
+    width: auto;
+    display: flex;
+    gap: 1%;
+}
+
+.edit-delete-btn-wrap>a {
+    flex-basis: 50%;
+    border-radius: 0;
+}
+
+.edit-btn,
+.delete-btn {
+    border: solid 2px black;
+    color: black;
+    background-color: lightgrey;
+}
+
+.delete-btn {
+    background-color: white;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -50,4 +160,32 @@ a {
 
 .add-review-icon-a {
     padding-top: 5px;
+}
+
+.button-wrapper {
+    display: flex;
+    gap: 5%;
+
+}
+
+.cancel-button {
+    border: solid black 2px;
+    padding: 1px 6px;
+    border-radius: 0;
+}
+
+.button-wrapper>button:hover {
+    border: solid 2px transparent;
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .review-album {
+        font-size: 2.75rem !important;
+    }
+
+    .review-artist {
+        font-size: 2rem !important;
+    }
 }
