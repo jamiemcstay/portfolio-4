@@ -117,45 +117,47 @@ The agile development phase of this project involved adopting the perspective of
 
 Users with superuser credentials can manage the platform's users, manage posts, and edit reviews.
 
-### **Header**
+### [**Header**](docs/features/header.png)
 
 The header features the TuneCritic logo, navigation menu, and user authentication links (login/logout/signup). It remains consistent across pages, offering quick access to the home page, and the 'My Reviews' section to add, edit and remove reviews for authenticated users. 
 
-### **Home Page**
+
+
+### [**Home Page**](docs/feaures/homepage.png)
 
 The home page is where users and visitors can browse thumbnails of all reviews that have been posted to the site. When a user or a visitor clicks into a specific review they are redirected to an expanded version of the review.
 
-### **My Reviews**
+### [**My Reviews**](docs/features/my-reviews.png)
 
 This page is where users can view all the reviews they have posted to the site. Also, users can add reviews, and edit and delete existing reviews. If an authenticated visitor tries to access this page, they will be redirected to either login, or create an accout. 
 
-### **Add Review**
+### [**Add Review**](docs/features/add-review.png)
 
 A form that allows authenticated users to a submit a new review, including the album title, artist name, a rating, and a text field for their opinion on the album.
 
-### **Edit Review**
+### [**Edit Review**](docs/features/edit-review.png)
 
 An form that allows users to edit their existing reviews by updating the text and other details that were previously added.
 
-### **Delete Review**
+### [**Delete Review**](docs/features/delete-review.png)
 
 A simple option for users to delete their reviews from the platform, once a user clicks the delete button they are redirected to a page that asks them to confirm they are sure they want to delete that review.
 
 ### **Accounts**
 
-#### **Login**
+#### [**Login**](docs/features/login.png)
 
 Allows registered users to securely log in to their account using their credentials (username and password).
 
-#### **Logout**
+#### [**Logout**](docs/features/logout.png)
 
 A button that securely logs the user out of the platform, ensuring their session ends.
 
-#### **Signup**
+#### [**Signup**](docs/features/signup.png)
 
 A registration process for new users to create an account, enabling them to write their reviews.
 
-#### **Messages**
+#### [**Messages**](docs/features/messages.png)
 
 Using messages users are informed of having logged in or out of the system, as well as if they have added, edited or deleted a review on the platform.
 
